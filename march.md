@@ -19,5 +19,13 @@ Disadvantages of previous deployment methods:
 
 Monolithic app ---> Microservices(deployment components) --> Independent process
 
+Deployment 
+Control Plane starts the app containers
+CP Schedules nodes to run apps
+Node communicates with the control plane through the Kubernetes API
+
+Instructs k8s to create instances of the app
+Initially installation scripts were used to deploy stuff but if they failed they would have to be manually set back up again... Kubernetes does this automatically.
+
 
 
