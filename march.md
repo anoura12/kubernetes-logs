@@ -24,8 +24,15 @@ Control Plane starts the app containers
 CP Schedules nodes to run apps
 Node communicates with the control plane through the Kubernetes API
 
-Instructs k8s to create instances of the app
 Initially installation scripts were used to deploy stuff but if they failed they would have to be manually set back up again... Kubernetes does this automatically.
+
+==========================================================================
+
+Kubectl --> k8s CLI --> basically communicates with the Control Plane through the API
+
+format of a kubectl command --> kubectl {action} {resource} {name of resource} {flag}
+
+kubectl proxy --> provides a secure connection to the API server in the cluster so that communication between the client and server is established
 
 
 
