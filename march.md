@@ -33,6 +33,18 @@ Kubectl --> k8s CLI --> basically communicates with the Control Plane through th
 format of a kubectl command --> kubectl {action} {resource} {name of resource} {flag}
 
 kubectl proxy --> provides a secure connection to the API server in the cluster so that communication between the client and server is established
+===========================================================================
+
+pods
+
+what happens when we create a deployment
+=> A pod with containers is created and remains alive under termination
+
+What happens once a node fails?
+Identical pods are created to restart the containers within them.
+Pods are only scheduled once 
+If terminated, new pods take over
+
 
 
 
